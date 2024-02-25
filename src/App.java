@@ -13,12 +13,13 @@ public class App extends Application {
   public void start(Stage myStage) throws Exception {
     Group rootNode = new Group();
     Scene myScene = new Scene(rootNode, Color.MIDNIGHTBLUE);
-
     myStage.setScene(myScene);
+
     myStage.setTitle("Hello World!");
     myStage.setWidth(420);
     myStage.setHeight(420);
     myStage.setResizable(false);
+    
     myStage.show();
   }
 }
