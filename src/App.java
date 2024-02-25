@@ -14,10 +14,6 @@ public class App extends Application {
     Scene scene = new Scene(root);
 
     myStage.setScene(scene);
-    myStage.setTitle("Hello World!");
-    myStage.setWidth(420);
-    myStage.setHeight(420);
-    myStage.setResizable(false);
     myStage.show();
   }
 }
