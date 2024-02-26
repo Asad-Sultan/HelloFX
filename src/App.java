@@ -1,6 +1,7 @@
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
-import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 public class App extends Application {
@@ -10,7 +11,7 @@ public class App extends Application {
 
   @Override
   public void start(Stage myStage) throws Exception {
-    Group root = new Group();
+    Parent root = FXMLLoader.load(getClass().getResource("App.fxml"));
     Scene scene = new Scene(root);
 
     myStage.setScene(scene);
